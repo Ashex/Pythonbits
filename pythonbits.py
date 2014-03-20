@@ -129,7 +129,7 @@ class PythonbitsConfig:
 		self.tempdir = TMPDIR
 		self.file=self.tempdir+"config.xml"
 		if not os.path.exists(self.file):
-			update_url = "https://github.com/Ichabond/Pythonbits/raw/master/config.xml"
+			update_url = "https://raw.github.com/Ichabond/Pythonbits/master/config.xml"
 			opener = _MyOpener()
 			nconf = opener.open(update_url)
 			if nconf.info()["Status"]=="200 OK":
